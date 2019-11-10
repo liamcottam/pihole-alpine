@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+
+s6-echo "Starting pihole-FTL ($FTL_CMD) as ${DNSMASQ_USER}"
+s6-setuidgid ${DNSMASQ_USER} pihole-FTL $FTL_CMD
